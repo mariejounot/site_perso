@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Vollkorn&display=swap');
+/*
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Vollkorn', serif;
+*/
+
+body{
+	font-family: "Vollkorn", serif;
+	margin:0;
+}
+
+.navbar{
+	max-width:1024px;
+	margin:auto;
+	padding:0 1rem;
+}
+
+/*
+ZONE HEADER
+*/
+
+.header .logo{
+	width:70px;
+}
+
+.header .logo img{
+	width:100%;
+}
+
+.header {
+  background-color: black;
+  box-shadow: 0 0 10px 10px #00000022;
+  font-family:'Montserrat Subrayada', sans-serif;
+  text-transform:uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+a{
+	color:#ff7900;
+	text-decoration: none;
+}
+
+.header ul {
+  margin: 1;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #ff7900;
+    color: black;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 3em;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+
+
+@media (min-width:480px) and (min-width:780px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+ 
+}
+
+/*
+SOUS MENU
+*/
+
+.sous{
+    display: none;
+    
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+/*
+EN TÊTE PAGE
+*/
+
+.hero {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+	max-width: 1024px;
+    margin: auto;
+    padding: 0 1rem;
+
+}
+
+
+.title-large{
+	font-weight:700;
+	font-size:2rem;
+	padding-top:400px;
+	
+	font-size:85px;
+	color:white;
+	text-align:center;
+}
+
+
+section {
+    padding: 4rem 0;
+}
+
+/* VISAGE
+*/
+
+
+
+.column p{
+	padding-right:70px;
+	padding-left:70px;
+
+}
+
+
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+    border-radius: 9999px;
+}
+
+/* ARTICLE */
+
+h2{
+  font-family:'Montserrat Subrayada', sans-serif;
+  font-size:31px;
+}
+
+.row h2{
+  text-align:center;
+}
+
+
+.column2{
+	flex:1;
+	padding:1px;
+}
+
+.columns1{
+	padding:50px;
+
+
+}
+
+.image2{
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width:880px){
+  .hero{
+    
+    height:900px;
+    width:100%;
+    padding-top:20px;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
+
+
+
+@media screen and (min-width: 880px){
+	.columns1{
+		display:flex;
+	}
+
+	.video{
+	width:100%;
+	}
+
+
+
+}
+
+
+.button{
+	background-color:#EE9600;
+	color:white;
+	padding: 0.5rem 1.5rem;
+    border-radius: 99999px;
+    transition: all 300ms;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    width:250px;
+    font-family:'Montserrat Subrayada', sans-serif;
+	text-transform:uppercase;
+	font-weight:lighter;
+
+}
+
+.button:hover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.article p{
+  font-family:'Vollkorn', serif;
+}
+
+
+
+/* SKILLS */
+
+.text-faded {
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+/* skills */
+
+label{
+  font-family:'Montserrat Subrayada', sans-serif;
+}
+
+.skills-section {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.skills-bar-container ul {
+  list-style: none;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.skills-bar-container li {
+  background: black;
+  height: 8px;
+  margin-bottom: 45px;
+  padding-left: 0px;
+  position: relative;
+  width: 100%;  
+}
+
+.skills-bar-container h1 {
+  margin-bottom: 50px;
+}
+
+.skills-bar-container label {
+  color: #ff7900;
+  position: relative;
+  font-size: .96em;
+  font-weight: 300;
+}
+
+.skills-bar-container .percent {
+  color: #ff7900;
+  font-size: .96em;
+  float: right;
+}
+
+.progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+#progress-html {
+  animation-name: progress-html;
+  animation-delay: 1.4s;
+}
+
+#progress-css {
+  animation-name: progress-css;
+  animation-delay: 2.1s;
+}
+
+#progress-javascript {
+  animation-name: progress-javascript;
+  animation-delay: 2.8s;
+}
+
+#progress-git {
+  animation-name: progress-git;
+  animation-delay: 3.5s;
+}
+
+#progress-php {
+  animation-name: progress-php;
+  animation-delay: 4.2s;
+}
+
+#progress-nodejs {
+  animation-name: progress-nodejs;
+  animation-delay: 4.9s;
+}
+
+#progress-wordpress {
+  animation-name: progress-wordpress;
+  animation-delay: 5.6s;
+}
+
+.progressred {
+  background-color: #ff7900;
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes progress-git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes progress-nodejs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes progress-wordpress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+/* skills end */
+
+
+/*FORMULAIRE*/
+
+.formulaire h3{
+	font-family:'Montserrat Subrayada', sans-serif;
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:30px;
+	color:#ff7900;
+}
+.formulaire h4{
+  font-family:'Vollkorn', serif;
+  font-weight:lighter;
+  font-size:20px;
+  color:#ff7900;
+}
+
+
+.formulaire{
+
+	background-color:#1e1e1e;
+	width:450px;
+	padding-right:40px;
+	padding-left:40px;
+	border-radius:30px;
+	margin:7em auto;
+	text-align:center;
+}
+
+
+.prenom, .nom, .mail{
+	width:50%;
+	padding:20px 0px;
+	border:none;
+	border-radius:20px;
+	outline:none;
+	box-sizing:border-box;
+	text-align:center;
+	margin-bottom:15px;
+	font-family:'Vollkorn', serif;
+  text-transform:uppercase;
+}
+
+.mail:hover{
+	background:#EFC84A;
+	color:white;
+}
+
+.nom:hover{
+	background:#EFC84A;
+	color:white;
+}
+
+.prenom:hover{
+	background:#EFC84A;
+	color:white;
+}
+
+.submit {
+		cursor:pointer;
+		font-weight:lighter;
+        
+        padding-top: 10px;
+        padding-bottom:10px;
+        padding-right:30px;
+        padding-left:30px;
+        border-radius:5em;
+        text-align: center;
+        background:#ff7900;
+        color:#1e1e1e;
+        font-family:'Montserrat Subrayada', sans-serif;
+        text-transform:uppercase;
+        font-size:20px;
+        border:none;
+        }
+
+.submit:hover{
+	background:#EFC84A;
+	color:white;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: black;
+    color: #ef781a;
+    padding: 3rem 0;
+    font-family:'Vollkorn', serif;
+    text-transform:uppercase;
+    font-weight:lighter;
+    text-align:left;
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+.footer .title{
+  font-family:'Montserrat Subrayada', sans-serif;
+}
+
+.footer a{
+	color:white;
+    text-decoration:none;
+    list-style-type : none;
+    text-align:left;
+
+}
+
+ul {
+  list-style-type : none;
+}
+
+
+
+.column3 {
+    padding: 1rem;
+    box-sizing: border-box;
+    flex:1;
+    
+}
+
+.column3.one-third {
+    flex: 33.33% 0 0;
+}
+
+.title{
+	padding-left:40px;
+	font-weight:normal;
+}
+
+
+
+
+@media screen and (min-width: 880px){
+.column{
+	flex:33.33%;
+}
+
+.column {
+  padding: 1rem;
+}
+
+
+@media screen and (min-width: 880px){
+  .columns {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .formulaire{
+  width:700px;
+}
+
+  /*
+PLANCHES
+  */
+ html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.planches {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #ff7900;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 7;
+}
+
+
+
+.items {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.items:hover {
+  flex: 7;
+
+}
+
+.item-1 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/dessin1%20copie.png");
+}
+
+
+.item-2 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/peinture5.png");
+}
+
+.item-3 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/sculpture1.png");
+}
+
+.item-4 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/photographie2%20copie.png");
+}
+
+.item-5 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/perf3.PNG ");
+}
+
+.item-6 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/Capture%20d’écran%202021-03-19%20à%2011.09.55.png");
+}
+
+.item-7 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/graphisme1.png");
+}
+
+.item-8 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/produit2.png");
+}
+
+.item-9 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/urbain1.png");
+}
+
+.item-10 {
+  background-image: url("file:///Users/jounotmarie/Desktop/SITE%20MARIE/images/perf3.PNG ");
+}
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+.social img {
+  display: block;
+  width: 32px;
+}

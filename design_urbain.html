@@ -1,0 +1,128 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/galery.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>DESIGN URBAIN</title>
+</head>
+
+
+<body>
+  <!--
+  ZONE HEADER
+-->
+<body>
+  <header class="header">
+  <div id="logo" class="logo">
+    <a href="index.html"><img src="images/signature.png" alt=""></a>
+  </div>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <nav>
+  <ul class="menu">
+    <li><a href="index.html">About</a></li>
+    <li class="deroulant"><a href="work.html">Plastic Works</a>
+    <ul class="sous">
+      <li><a href="dessin.html">DESSIN</a></li>
+      <li><a href="peinture.html">PEINTURE</a></li>
+      <li><a href="sculpture.html">SCULPTURE</a></li>
+      <li><a href="photographie.html">PHOTOGRAPHIE</a></li>
+      <li><a href="performance.html">PERFORMANCES</a></li>
+    </ul>
+    </li>
+    <li class="deroulant"><a href="work.html">GRAPHIC Works</a>
+    <ul class="sous">
+      <li><a href="interface_numerique.html">INTERFACES NUMÉRIQUES</a></li>
+      <li><a href="design_graphique.html">GRAPHISME</a></li>
+      <li><a href="illustrations_produits.html">ILLUSTRATIONS PRODUITS</a></li>
+      <li><a href="#">DESIGN URBAIN</a></li>
+      <li><a href="#">DESIGN DE MODE</a></li>
+    </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<!--
+  ZONE GALLERIE
+-->
+<section class="gallery">
+    <div class="container">
+
+      <a href="./images/urbain1.png" class="image">
+          <h1>Image Name</h1>
+          <img src="./images/urbain1.png">
+        </a>
+
+      <a href="./images/urbain2.png" class="image">
+          <h1>Image Name</h1>
+          <img src="./images/urbain2.png">
+        </a>
+
+    
+        
+          <a href="./images/urbain3.png" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." class="image">
+          <h1>Image <br> Name</h1>
+          <img src="./images/urbain3.png">
+        </a>
+
+        <a href="./images/urbain4.png" title="WOWOWO" class="image">
+          <h1>Image Name</h1>
+          <img src="./images/urbain4.png">
+        </a>
+
+        <a href="./images/urbain5.png" title="WOWOWO" class="image">
+          <h1>Image Name</h1>
+          <img src="./images/urbain5.png">
+        </a>
+
+        <a href="./images/urbain6.png" title="WOWOWO" class="image">
+          <h1>Image Name</h1>
+          <img src="./images/urbain6.png">
+        </a>
+
+        <a href="./images/urbain7.png" title="WOWOWO" class="image">
+          <h1>Image Name</h1>
+          <img src="./images/urbain7.png">
+        </a>
+
+        
+
+      
+
+    </div>
+</section>
+
+
+<script>
+  $(".gallery").magnificPopup({
+    delegate:'a',
+    type: 'image',
+    gallery:{
+      enabled: true
+    }
+   
+  });
+</script>
+
+
+<!--
+  FIN ZONE GALLERIE
+-->
+
+
+</body>
+</html>
