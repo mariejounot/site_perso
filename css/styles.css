@@ -29,6 +29,7 @@ a {
 
 .navbar-brand {
     height: 100px;
+    width: auto;
 }
 
 .navbar-brand a {
@@ -37,6 +38,7 @@ a {
 
 .navbar-brand img {
     height: 100%;
+    width: auto;
     padding: 15px 0 15px 15px;
 }
 
@@ -254,9 +256,8 @@ EN TÊTE PAGE
     text-align: center;
 }
 
-
 section {
-    padding: 4rem 0;
+    margin: 4rem 0;
 }
 
 /* VISAGE
@@ -274,7 +275,7 @@ section {
     text-align: center;
 }
 
-.image img {
+.image img:not(.gallery img) {
     width: 100%;
     max-width: 200px;
     margin-bottom: 1rem;
@@ -374,7 +375,6 @@ label {
 }
 
 .skills-section {
-    padding-bottom: 100px;
     padding-top: 50px;
 }
 
@@ -546,10 +546,9 @@ label {
 .formulaire {
     background-color: #1e1e1e;
     width: calc(100vw - 10em);
-    padding-right: 40px;
-    padding-left: 40px;
     border-radius: 30px;
-    margin: 7em auto;
+    margin: auto;
+    padding: 3.5em;
     text-align: center;
 }
 
@@ -612,6 +611,7 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    margin-top: 4em;
 }
 
 .footer .title {
@@ -779,5 +779,96 @@ ul {
     .social img {
         display: block;
         width: 32px;
+    }
+}
+
+
+/*
+GALLERY
+*/
+
+
+.gallery {
+    background-color: black;
+}
+
+.gallery .container {
+    position: relative;
+    column-count: 3;
+    padding: 20px;
+}
+
+.image {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.gallery h2 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    position: absolute;
+    display: none;
+    top: 90px;
+    left: 40px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 50px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.25s ease-in-out;
+}
+
+
+.gallery .image:hover h2 {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .gallery .container {
+        column-count: 2;
+    }
+
+    .gallery h2 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .gallery .container {
+        column-count: 1;
+    }
+
+    .gallery h2 {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .gallery .container {
+        column-count: 1;
+    }
+
+    .gallery h2 {
+        font-size: 15px;
     }
 }

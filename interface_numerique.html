@@ -8,6 +8,7 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <title>Marie Jounot</title>
     <link href="images/signature.ico" rel="shortcut icon" type="image/x-icon">
@@ -68,12 +69,10 @@
         <a class="image"
            href="./images/inter8.png"
            title="Réalisation du site Gifi Love Tour, à l'occasion des 40 ans de l'enseigne. Visitable à cette adresse : https://www.gifilovetour.fr, 2021.">
-            <h1>Image Name</h1>
             <img alt="" src="./images/inter8.png">
         </a>
 
         <a class="image" href="./images/inter10%20copie.png">
-            <h1>Image Name</h1>
             <img alt="" src="./images/inter10%20copie.png">
         </a>
 
@@ -83,53 +82,34 @@
 
 Why do we use it?
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).">
-            <h1>Image <br> Name</h1>
             <img alt="" src="./images/interface.jpg">
         </a>
 
         <a class="image" href="./images/interface2.png" title="WOWOWO">
-            <h1>Image Name</h1>
             <img alt="" src="./images/interface2.png">
         </a>
 
         <a class="image" href="./images/interface3.png">
-            <h1>Image Name</h1>
             <img alt="" src="./images/interface3.png">
         </a>
 
         <a class="image" href="./images/interface4.png">
-            <h1>Image Name</h1>
             <img alt="" src="./images/interface4.png">
         </a>
 
         <a class="image" href="./images/interface5.png">
-            <h1>Image Name</h1>
             <img alt="" src="./images/interface5.png">
         </a>
 
         <a class="image" href="./images/interface6.png">
-            <h1>Image Name</h1>
             <img alt="" src="./images/interface6.png">
         </a>
 
         <a class="image" href="./images/interface7.jpg">
-            <h1>Image Name</h1>
             <img alt="" src="./images/interface7.jpg">
         </a>
     </div>
 </section>
-
-
-<script>
-    $(".gallery").magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-
-    });
-</script>
 
 
 <!--
@@ -143,14 +123,25 @@ It is a long established fact that a reader will be distracted by the readable c
 <script crossorigin="anonymous"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 <script>
     $().ready(_ => {
         if ($(window).width() + 16 < 767) {
             $('#menuItem-2').data('toggle', 'dropdown');
+            $('#menuItem-3').data('toggle', 'dropdown');
         } else {
             $('#menuItem-2').removeAttr('data-toggle');
+            $('#menuItem-3').removeAttr('data-toggle');
         }
+
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
     });
 </script>
 </body>

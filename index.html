@@ -178,16 +178,14 @@
 	--->
 
 <section class="formulaire">
-    <div class="form">
-        <h3>LET'S WORK TOGETHER</h3>
-        <h4>Une question ? Un projet ? Contactez-moi</h4>
+    <h3>LET'S WORK TOGETHER</h3>
+    <h4>Une question ? Un projet ? Contactez-moi</h4>
 
-        <div class="form-inputs">
-            <input class="nom" name="nom" placeholder="Nom" type="text"/>
-            <input class="prenom" name="prenom" placeholder="Prénom" type="text"/>
-            <input class="mail" name="mail" placeholder="Mail" type="text"/>
-            <input class="submit" name="submit" type="submit" value="Envoyer"/>
-        </div>
+    <div class="form-inputs">
+        <input class="nom" name="nom" placeholder="Nom" type="text"/>
+        <input class="prenom" name="prenom" placeholder="Prénom" type="text"/>
+        <input class="mail" name="mail" placeholder="Mail" type="text"/>
+        <input class="submit" name="submit" type="submit" value="Envoyer"/>
     </div>
 </section>
 
@@ -259,8 +257,10 @@
     $().ready(_ => {
         if ($(window).width() + 16 < 767) {
             $('#menuItem-2').data('toggle', 'dropdown');
+            $('#menuItem-3').data('toggle', 'dropdown');
         } else {
             $('#menuItem-2').removeAttr('data-toggle');
+            $('#menuItem-3').removeAttr('data-toggle');
         }
     });
 </script>

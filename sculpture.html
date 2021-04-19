@@ -8,6 +8,7 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <title>Marie Jounot</title>
     <link href="images/signature.ico" rel="shortcut icon" type="image/x-icon">
@@ -70,7 +71,6 @@
 </br>
 </br>
 Création d’un espace dans un espace, libre d’être parcouru, modifié, exploité, détruit, déplacé, par l’homme comme par les éléments naturels. Découverte d’un espace couvert et découvert, d’une texture différente des espaces que l’on arpente habituellement. C’est un appel aux sens individuels.">
-            <h1>Image <br> Name</h1>
             <img alt="" src="./images/sculpture1.png">
         </a>
 
@@ -79,7 +79,6 @@ Création d’un espace dans un espace, libre d’être parcouru, modifié, expl
 </br>
 </br>
 Création d’un espace dans un espace, libre d’être parcouru, modifié, exploité, détruit, déplacé, par l’homme comme par les éléments naturels. Découverte d’un espace couvert et découvert, d’une texture différente des espaces que l’on arpente habituellement. C’est un appel aux sens individuels.">
-            <h1>Image Name</h1>
             <img alt="" src="./images/sculpture2.png">
         </a>
 
@@ -89,23 +88,10 @@ Création d’un espace dans un espace, libre d’être parcouru, modifié, expl
       </br>
 
 Ce travail qui questionne la réelle temporalité des choses par l’utilisation de deux matériaux, un constant et un éphémère qui a su se préserver pourtant dans le temps grâce à un procédé chimique, à une transmutation. Il questionne également le subjectif par les différents sentiments que le spectateur, selon ses affinités, peut avoir face au poisson. Sacralisation d’un objet ordinaire par l’ajout de cette peau de poisson. Travail qui interroge la destination de l’objet dit « lambda » et le regard qui s’en trouve changé quant à son utilité. Utilisation du miroir comme socle pour renforcer le fait qu’ils ne peuvent pas servir réellement.">
-            <h1>Image Name</h1>
             <img alt="" src="./images/sculpture3.png">
         </a>
     </div>
 </section>
-
-
-<script>
-    $(".gallery").magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-
-    });
-</script>
 
 
 <!--
@@ -119,14 +105,25 @@ Ce travail qui questionne la réelle temporalité des choses par l’utilisation
 <script crossorigin="anonymous"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 <script>
     $().ready(_ => {
         if ($(window).width() + 16 < 767) {
             $('#menuItem-2').data('toggle', 'dropdown');
+            $('#menuItem-3').data('toggle', 'dropdown');
         } else {
             $('#menuItem-2').removeAttr('data-toggle');
+            $('#menuItem-3').removeAttr('data-toggle');
         }
+
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
     });
 </script>
 </body>

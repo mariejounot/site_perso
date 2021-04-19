@@ -8,6 +8,7 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <title>Marie Jounot</title>
     <link href="images/signature.ico" rel="shortcut icon" type="image/x-icon">
@@ -86,8 +87,10 @@
     $().ready(_ => {
         if ($(window).width() + 16 < 767) {
             $('#menuItem-2').data('toggle', 'dropdown');
+            $('#menuItem-3').data('toggle', 'dropdown');
         } else {
             $('#menuItem-2').removeAttr('data-toggle');
+            $('#menuItem-3').removeAttr('data-toggle');
         }
     });
 </script>

@@ -89,8 +89,10 @@
     $().ready(_ => {
         if ($(window).width() + 16 < 767) {
             $('#menuItem-2').data('toggle', 'dropdown');
+            $('#menuItem-3').data('toggle', 'dropdown');
         } else {
             $('#menuItem-2').removeAttr('data-toggle');
+            $('#menuItem-3').removeAttr('data-toggle');
         }
     });
 </script>
