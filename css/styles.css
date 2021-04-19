@@ -23,11 +23,11 @@ body {
 ZONE HEADER
 */
 
-.header .logo {
+.navbar-brand {
     width: 70px;
 }
 
-.header .logo img {
+.navbar-brand img {
     width: 100%;
 }
 
@@ -67,7 +67,7 @@ a {
     color: black;
 }
 
-.header .logo {
+.navbar-brand {
     display: block;
     float: left;
     font-size: 3em;
@@ -269,7 +269,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 558px) {
+@media screen and (max-width: 580px) {
     .hero-container {
         height: 200px;
         font-size: 0.6em;
@@ -501,9 +501,8 @@ label {
 
 
 .formulaire {
-
     background-color: #1e1e1e;
-    width: 450px;
+    width: calc(100vw - 10em);
     padding-right: 40px;
     padding-left: 40px;
     border-radius: 30px;
@@ -511,8 +510,14 @@ label {
     text-align: center;
 }
 
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.prenom, .nom, .mail {
+
+.form-inputs > input:not(.submit) {
     width: 50%;
     padding: 20px 0;
     border: none;
@@ -525,17 +530,7 @@ label {
     text-transform: uppercase;
 }
 
-.mail:hover {
-    background: #EFC84A;
-    color: white;
-}
-
-.nom:hover {
-    background: #EFC84A;
-    color: white;
-}
-
-.prenom:hover {
+.form-inputs > input:not(.submit):hover {
     background: #EFC84A;
     color: white;
 }
@@ -609,137 +604,137 @@ ul {
     font-weight: normal;
 }
 
+@media screen and (max-width: 580px) {
+    .formulaire {
+        width: calc(100vw - 10em);
+    }
+
+    .form-inputs > input:not(.submit) {
+        width: 80%;
+        padding: 10px 0;
+    }
+}
 
 @media screen and (min-width: 880px) {
-    .column {
-        flex: 33.33%;
+    .columns {
+        display: flex;
     }
 
     .column {
+        flex: 33.33%;
         padding: 1rem;
     }
 
+    .formulaire {
+        width: 700px;
+    }
 
-    @media screen and (min-width: 880px) {
-        .columns {
-            display: flex;
-        }
+    /*
+  PLANCHES
+    */
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
 
-        .column {
-            flex: 1;
-        }
+    .planches {
+        padding: 75px 0;
+        margin: 0 auto;
+        width: 1140px;
+    }
 
-        .formulaire {
-            width: 700px;
-        }
+    h1 {
+        position: relative;
+        margin-bottom: 45px;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        color: #ff7900;
+    }
 
-        /*
-      PLANCHES
-        */
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-
-        .planches {
-            padding: 75px 0;
-            margin: 0 auto;
-            width: 1140px;
-        }
-
-        h1 {
-            position: relative;
-            margin-bottom: 45px;
-            font-family: 'Montserrat Subrayada', sans-serif;
-            font-size: 44px;
-            text-transform: uppercase;
-            color: #ff7900;
-        }
-
-        .gallery-wrap {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 70vh;
-        }
+    .gallery-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70vh;
+    }
 
 
-        .item {
-            flex: 1;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            transition: flex 0.8s ease;
-        }
+    .item {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: flex 0.8s ease;
+    }
 
-        .item:hover {
-            flex: 7;
-        }
-
-
-        .items {
-            flex: 1;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            transition: flex 0.8s ease;
-        }
-
-        .items:hover {
-            flex: 7;
-
-        }
-
-        .item-1 {
-            background-image: url("../images/dessin1 copie.png");
-        }
+    .item:hover {
+        flex: 7;
+    }
 
 
-        .item-2 {
-            background-image: url("../images/peinture5.png");
-        }
+    .items {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: flex 0.8s ease;
+    }
 
-        .item-3 {
-            background-image: url("../images/sculpture1.png");
-        }
+    .items:hover {
+        flex: 7;
 
-        .item-4 {
-            background-image: url("../images/photographie2 copie.png");
-        }
+    }
 
-        .item-5 {
-            background-image: url("../images/perf3.PNG ");
-        }
+    .item-1 {
+        background-image: url("../images/dessin1 copie.png");
+    }
 
-        .item-6 {
-            background-image: url("../images/Capture d’écran 2021-03-19 à 11.09.55.png");
-        }
 
-        .item-7 {
-            background-image: url("../images/graphisme1.png");
-        }
+    .item-2 {
+        background-image: url("../images/peinture5.png");
+    }
 
-        .item-8 {
-            background-image: url("../images/produit2.png");
-        }
+    .item-3 {
+        background-image: url("../images/sculpture1.png");
+    }
 
-        .item-9 {
-            background-image: url("../images/urbain1.png");
-        }
+    .item-4 {
+        background-image: url("../images/photographie2 copie.png");
+    }
 
-        .item-10 {
-            background-image: url("../images/perf3.PNG ");
-        }
+    .item-5 {
+        background-image: url("../images/perf3.PNG ");
+    }
 
-        .social {
-            position: absolute;
-            right: 35px;
-            bottom: 0;
-        }
+    .item-6 {
+        background-image: url("../images/Capture d’écran 2021-03-19 à 11.09.55.png");
+    }
 
-        .social img {
-            display: block;
-            width: 32px;
-        }
+    .item-7 {
+        background-image: url("../images/graphisme1.png");
+    }
+
+    .item-8 {
+        background-image: url("../images/produit2.png");
+    }
+
+    .item-9 {
+        background-image: url("../images/urbain1.png");
+    }
+
+    .item-10 {
+        background-image: url("../images/perf3.PNG ");
+    }
+
+    .social {
+        position: absolute;
+        right: 35px;
+        bottom: 0;
+    }
+
+    .social img {
+        display: block;
+        width: 32px;
     }
 }
