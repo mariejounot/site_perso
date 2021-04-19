@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/styles.css">
-
-
-	<title>CONTACT</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Marie Jounot</title>
+    <link href="images/signature.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 
-
-<body>
-	<!--
+<!--
 	ZONE HEADER
 -->
 <body>
-	<header class="header">
-  <div id="logo" class="logo">
-		<img src="images/signature.png" alt="">
-	</div>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <nav>
-  <ul class="menu">
-    <li><a href="index.html">About</a></li>
-    <li class="deroulant"><a href="work.html">Plastic Works</a>
-    <ul class="sous">
-    	<li><a href="dessin.html">DESSIN</a></li>
-    	<li><a href="peinture.html">PEINTURE</a></li>
-    	<li><a href="sculpture.html">SCULPTURE</a></li>
-    	<li><a href="photographie.html">PHOTOGRAPHIE</a></li>
-    	<li><a href="performance.html">PERFORMANCES</a></li>
-    </ul>
-    </li>
-    <li class="deroulant"><a href="work.html">GRAPHIC Works</a>
-    <ul class="sous">
-    	<li><a href="interface_numerique.html">INTERFACES NUMÉRIQUES</a></li>
-    	<li><a href="design_graphique.html">GRAPHISME</a></li>
-    	<li><a href="#">ILLUSTRATIONS PRODUITS</a></li>
-    	<li><a href="#">DESIGN URBAIN</a></li>
-    	<li><a href="#">DESIGN DE MODE</a></li>
-    </ul>
-    </li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<nav class="navbar navbar-expand-md fixed-top py-0">
+    <a class="navbar-brand" href="index.html">
+        <img alt="Logo Marie Jounot" src="./images/signature.png">
+    </a>
+    <button aria-controls="burgerMenu" aria-expanded="false" aria-label="Ouvrir le menu"
+            class="navbar-toggler d-lg-none"
+            data-target="#burgerMenu"
+            data-toggle="collapse" type="button"><i aria-hidden="true" class="fa fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="burgerMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="work.html" id="menuItem-2">Plastic Works</a>
+                <div aria-labelledby="menuItem-2" class="dropdown-menu">
+                    <a class="dropdown-item" href="dessin.html">DRAWING</a>
+                    <a class="dropdown-item" href="peinture.html">PAINTING</a>
+                    <a class="dropdown-item" href="sculpture.html">SCULPTURE</a>
+                    <a class="dropdown-item" href="photographie.html">PHOTOGRAPHY</a>
+                    <a class="dropdown-item" href="performance.html">PERFORMANCES</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="graphic-work.html" id="menuItem-3">GRAPHIC Works</a>
+                <div aria-labelledby="menuItem-3" class="dropdown-menu">
+                    <a class="dropdown-item" href="interface_numerique.html">DIGITAL INTERFACES</a>
+                    <a class="dropdown-item" href="design_graphique.html">GRAPHIC DESIGN</a>
+                    <a class="dropdown-item" href="illustrations_produits.html">PRODUCT ILLUSTRATIONS</a>
+                    <a class="dropdown-item" href="#">URBAN DESIGN</a>
+                    <a class="dropdown-item" href="#">FASHION DESIGN</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
 </nav>
-</header>
-	
-<body>
 
+<script crossorigin="anonymous"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $().ready(_ => {
+        if ($(window).width() + 16 < 767) {
+            $('#menuItem-2').data('toggle', 'dropdown');
+        } else {
+            $('#menuItem-2').removeAttr('data-toggle');
+        }
+    });
+</script>
 </body>
 </html>

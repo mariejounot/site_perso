@@ -1,125 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/galery.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-	<title>DESSIN</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Marie Jounot</title>
+    <link href="images/signature.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 
-
-<body>
-	<!--
+<!--
 	ZONE HEADER
 -->
 <body>
-	<header class="header">
-  <div id="logo" class="logo">
-		<a href="index.html"><img src="images/signature.png" alt=""></a>
-	</div>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <nav>
-  <ul class="menu">
-    <li><a href="index.html">About</a></li>
-    <li class="deroulant"><a href="work.html">Plastic Works</a>
-    <ul class="sous">
-    	<li><a href="dessin.html">DRAWING</a></li>
-    	<li><a href="peinture.html">PAINTING</a></li>
-    	<li><a href="sculpture.html">SCULPTURE</a></li>
-    	<li><a href="photographie.html">PHOTOGRAPHY</a></li>
-    	<li><a href="performance.html">PERFORMANCES</a></li>
-    </ul>
-    </li>
-    <li class="deroulant"><a href="work.html">GRAPHIC Works</a>
-    <ul class="sous">
-    	<li><a href="interface_numerique.html">DIGITAL INTERFACES</a></li>
-    	<li><a href="design_graphique.html">GRAPHIC DESIGN</a></li>
-    	<li><a href="illustrations_produits.html">PRODUCT ILLUSTRATIONS</a></li>
-    	<li><a href="#">URBAN DESIGN</a></li>
-    	<li><a href="#">FASHION DESIGN</a></li>
-    </ul>
-    </li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<nav class="navbar navbar-expand-md fixed-top py-0">
+    <a class="navbar-brand" href="index.html">
+        <img alt="Logo Marie Jounot" src="./images/signature.png">
+    </a>
+    <button aria-controls="burgerMenu" aria-expanded="false" aria-label="Ouvrir le menu"
+            class="navbar-toggler d-lg-none"
+            data-target="#burgerMenu"
+            data-toggle="collapse" type="button"><i aria-hidden="true" class="fa fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="burgerMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="work.html" id="menuItem-2">Plastic Works</a>
+                <div aria-labelledby="menuItem-2" class="dropdown-menu">
+                    <a class="dropdown-item" href="dessin.html">DRAWING</a>
+                    <a class="dropdown-item" href="peinture.html">PAINTING</a>
+                    <a class="dropdown-item" href="sculpture.html">SCULPTURE</a>
+                    <a class="dropdown-item" href="photographie.html">PHOTOGRAPHY</a>
+                    <a class="dropdown-item" href="performance.html">PERFORMANCES</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="graphic-work.html" id="menuItem-3">GRAPHIC Works</a>
+                <div aria-labelledby="menuItem-3" class="dropdown-menu">
+                    <a class="dropdown-item" href="interface_numerique.html">DIGITAL INTERFACES</a>
+                    <a class="dropdown-item" href="design_graphique.html">GRAPHIC DESIGN</a>
+                    <a class="dropdown-item" href="illustrations_produits.html">PRODUCT ILLUSTRATIONS</a>
+                    <a class="dropdown-item" href="#">URBAN DESIGN</a>
+                    <a class="dropdown-item" href="#">FASHION DESIGN</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
 </nav>
-</header>
+
 
 <!--
   ZONE GALLERIE
 -->
 <section class="gallery">
     <div class="container">
-        
-          <a href="./images/dessin1.png" title="Sans titre, encre de Chine, fils, scotch, tissus, 2018. </br>
+
+        <a class="image" href="./images/dessin1.png" title="Sans titre, encre de Chine, fils, scotch, tissus, 2018. </br>
           </br>
 Fils trempés dans l’encre de Chine puis projetés, effleurés, caressés, brossés, frappés,
 heurtés afin de créer leurs différentes empreintes. Cousus à la machine et présentés sous
-forme de patchwork, ce travail mélange violence et douceur." class="image">
-          <h1>Image <br> Name</h1>
-          <img src="./images/dessin1.png">
+forme de patchwork, ce travail mélange violence et douceur.">
+            <h1>Image <br> Name</h1>
+            <img alt="" src="./images/dessin1.png">
         </a>
 
-        <a href="./images/dessin2.png" title="Dessins réalistes
+        <a class="image" href="./images/dessin2.png" title="Dessins réalistes
 contemporains sur la
 ville d’Amiens, crayon
-de bois, 2015." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin2.png">
+de bois, 2015.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin2.png">
         </a>
 
-        <a href="./images/dessin3.png" title="Dessins réalistes
+        <a class="image" href="./images/dessin3.png" title="Dessins réalistes
 contemporains sur la
 ville d’Amiens, crayon
-de bois, 2015." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin3.png">
+de bois, 2015.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin3.png">
         </a>
 
-        <a href="./images/dessin4.png" title="Dessins réalistes
+        <a class="image" href="./images/dessin4.png" title="Dessins réalistes
 contemporains sur la
 ville d’Amiens, crayon
-de bois, 2015." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin4.png">
+de bois, 2015.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin4.png">
         </a>
 
-        <a href="./images/dessin5.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin5.png">
+        <a class="image" href="./images/dessin5.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin5.png">
         </a>
 
-        <a href="./images/dessin6.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin6.png">
+        <a class="image" href="./images/dessin6.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin6.png">
         </a>
 
-        <a href="./images/dessin7.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin7.png">
+        <a class="image" href="./images/dessin7.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin7.png">
         </a>
 
-        <a href="./images/dessin8.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin8.png">
+        <a class="image" href="./images/dessin8.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin8.png">
         </a>
 
-        <a href="./images/dessin9.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin9.png">
+        <a class="image" href="./images/dessin9.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin9.png">
         </a>
 
-        <a href="./images/dessin10.png" title="Douce violence, 30 papiers piqués avec une aiguille, 2018." class="image">
-          <h1>Image Name</h1>
-          <img src="./images/dessin10.png">
+        <a class="image" href="./images/dessin10.png"
+           title="Douce violence, 30 papiers piqués avec une aiguille, 2018.">
+            <h1>Image Name</h1>
+            <img alt="" src="./images/dessin10.png">
         </a>
 
     </div>
@@ -127,14 +135,14 @@ de bois, 2015." class="image">
 
 
 <script>
-  $(".gallery").magnificPopup({
-    delegate:'a',
-    type: 'image',
-    gallery:{
-      enabled: true
-    }
-   
-  });
+    $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+
+    });
 </script>
 
 
@@ -143,5 +151,21 @@ de bois, 2015." class="image">
 -->
 
 
+<script crossorigin="anonymous"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $().ready(_ => {
+        if ($(window).width() + 16 < 767) {
+            $('#menuItem-2').data('toggle', 'dropdown');
+        } else {
+            $('#menuItem-2').removeAttr('data-toggle');
+        }
+    });
+</script>
 </body>
 </html>

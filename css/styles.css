@@ -7,94 +7,147 @@ font-family: 'Vollkorn', serif;
 
 body {
     font-family: "Vollkorn", serif;
-    margin: 0;
+    margin: 100px 0 0;
     height: 100%;
     font-size: 1em;
     overflow-x: hidden;
+    width: 100%;
 }
 
-.navbar {
-    max-width: 1024px;
-    margin: auto;
-    padding: 0 1rem;
+.main {
+    margin-top: 100px;
 }
 
 /*
 ZONE HEADER
 */
 
-.navbar-brand {
-    width: 70px;
-}
-
-.navbar-brand img {
-    width: 100%;
-}
-
-.header {
-    background-color: black;
-    box-shadow: 0 0 10px 10px #00000022;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    text-transform: uppercase;
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    height: 100px;
-    top: 0;
-}
-
 a {
     color: #ff7900;
     text-decoration: none;
 }
 
-.header ul {
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: black;
-}
-
-.header li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-    background-color: #ff7900;
-    color: black;
-}
-
 .navbar-brand {
-    display: block;
-    float: left;
-    font-size: 3em;
-    padding: 20px 20px;
+    height: 100px;
+}
+
+.navbar-brand a {
+    height: 100px;
+}
+
+.navbar-brand img {
+    height: 100%;
+    padding: 15px 0 15px 15px;
+}
+
+.navbar {
+    background-color: black;
+    box-shadow: 0 0 10px 10px #00000022;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 1rem;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    text-align: right;
+    height: 100px;
+    background-color: #000;
+}
+
+.navbar .nav-item {
+    background-color: #000;
+    transition: all 240ms;
+    display: flex;
+    align-items: center;
+    color: #ff7900;
+}
+
+.navbar .nav-item:hover {
+    color: #000;
+    background-color: #ff7900;
+}
+
+.navbar .nav-item a.nav-link {
+    color: inherit;
+    padding: 20px;
     text-decoration: none;
 }
 
+.nav-item a:after {
+    margin-left: 0.5em;
+}
 
-@media (min-width: 480px) and (min-width: 780px) {
-    .header li {
-        float: left;
+.navbar-toggler {
+    color: #ff7900;
+    font-size: 1.8rem;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    color: #ff7900;
+    border: none;
+    border-radius: 0;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100vw;
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: inherit;
+    width: 100%;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: #ff7900;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        height: 100%;
     }
 
-    .header li a {
-        padding: 20px 30px;
+    .navbar .nav-link {
+        text-align: right;
     }
 
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
+    .dropdown-menu {
+        width: 100%;
     }
 
-    .header .menu-icon {
+    .dropdown-item {
+        text-align: right;
+    }
+
+    .navbar .nav-item {
+        display: block;
+    }
+
+    .navbar .dropdown-item {
+        display: block;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+    .navbar .nav-item .dropdown-menu {
         display: none;
+        margin-top: 0;
     }
 
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 /*
@@ -128,11 +181,6 @@ nav > ul li:hover .sous {
     border-bottom: none;
 }
 
-.deroulant > a::after {
-    content: " ▼";
-    font-size: 12px;
-}
-
 .conteneur {
     margin: 50px 20px;
     height: 1500px;
@@ -144,7 +192,6 @@ EN TÊTE PAGE
 .hero-container {
     background-image: url("../images/banniere_sanstexte.png");
     height: calc(100vh - 100px);
-    margin-top: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,25 +288,13 @@ h2 {
     font-size: 31px;
 }
 
-.row h2 {
-    text-align: center;
-}
-
-
-.column2 {
-    flex: 1;
-    padding: 1px;
-}
-
-.columns1 {
+.article {
     padding: 50px;
-
-
 }
 
-.image2 {
-    max-width: 100%;
-    height: auto;
+.text_article img {
+    float: left;
+    margin-right: 20px;
 }
 
 @media screen and (min-width: 559px) and (max-width: 879px) {
@@ -317,6 +352,14 @@ h2 {
 
 
 /* SKILLS */
+
+.skills {
+    margin: auto;
+}
+
+.skills h2 {
+    text-align: center;
+}
 
 .text-faded {
     color: rgb(255, 255, 255);

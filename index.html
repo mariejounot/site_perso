@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          rel="stylesheet"/>
     <link href="./css/styles.css" rel="stylesheet">
     <title>Marie Jounot</title>
     <link href="images/signature.ico" rel="shortcut icon" type="image/x-icon">
@@ -14,37 +17,47 @@
 	ZONE HEADER
 -->
 <body>
-
-<header class="header">
-    <div class="logo" id="logo">
-        <a href="index.html"><img alt="" src="images/signature.png"></a>
-    </div>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">About</a></li>
-            <li class="deroulant"><a href="work.html">Plastic Works</a>
-                <ul class="sous">
-                    <li><a href="dessin.html">DRAWING</a></li>
-                    <li><a href="peinture.html">PAINTING</a></li>
-                    <li><a href="sculpture.html">SCULPTURE</a></li>
-                    <li><a href="photographie.html">PHOTOGRAPHY</a></li>
-                    <li><a href="performance.html">PERFORMANCES</a></li>
-                </ul>
+<nav class="navbar navbar-expand-md fixed-top py-0">
+    <a class="navbar-brand" href="index.html">
+        <img alt="Logo Marie Jounot" src="./images/signature.png">
+    </a>
+    <button aria-controls="burgerMenu" aria-expanded="false" aria-label="Ouvrir le menu"
+            class="navbar-toggler d-lg-none"
+            data-target="#burgerMenu"
+            data-toggle="collapse" type="button"><i aria-hidden="true" class="fa fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="burgerMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
             </li>
-            <li class="deroulant"><a href="graphic-work.html">GRAPHIC Works</a>
-                <ul class="sous">
-                    <li><a href="interface_numerique.html">DIGITAL INTERFACES</a></li>
-                    <li><a href="design_graphique.html">GRAPHIC DESIGN</a></li>
-                    <li><a href="illustrations_produits.html">PRODUCT ILLUSTRATIONS</a></li>
-                    <li><a href="#">URBAN DESIGN</a></li>
-                    <li><a href="#">FASHION DESIGN</a></li>
-                </ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="work.html" id="menuItem-2">Plastic Works</a>
+                <div aria-labelledby="menuItem-2" class="dropdown-menu">
+                    <a class="dropdown-item" href="dessin.html">DRAWING</a>
+                    <a class="dropdown-item" href="peinture.html">PAINTING</a>
+                    <a class="dropdown-item" href="sculpture.html">SCULPTURE</a>
+                    <a class="dropdown-item" href="photographie.html">PHOTOGRAPHY</a>
+                    <a class="dropdown-item" href="performance.html">PERFORMANCES</a>
+                </div>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="graphic-work.html" id="menuItem-3">GRAPHIC Works</a>
+                <div aria-labelledby="menuItem-3" class="dropdown-menu">
+                    <a class="dropdown-item" href="interface_numerique.html">DIGITAL INTERFACES</a>
+                    <a class="dropdown-item" href="design_graphique.html">GRAPHIC DESIGN</a>
+                    <a class="dropdown-item" href="illustrations_produits.html">PRODUCT ILLUSTRATIONS</a>
+                    <a class="dropdown-item" href="#">URBAN DESIGN</a>
+                    <a class="dropdown-item" href="#">FASHION DESIGN</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
         </ul>
-    </nav>
-</header>
+    </div>
+</nav>
 
 <!--
 	EN TÊTE PAGE
@@ -69,47 +82,36 @@
     ARTICLE
     --->
 <section class="article">
-    <div class="columns1">
-        <div class="column2">
-            <div class="image2">
-                <img alt="" src="./images/goodd.png">
-            </div>
-        </div>
+    <div class="row">
+        <div class="text_article">
+            <img alt="" src="./images/goodd.png">
+            <h2> Hi, I'm Marie<br/>And I am an artistic director /<br/> graphic designer and artiste<br/> from
+                Paris</h2>
+            <p>
+                Après 5 années d'études, diplomée d'une licence d'Arts Plastiques à Amiens, d'un master 1 Design et
+                prochainement d'un master 2 Métiers du Multimédia Interactif à Paris 1// Panthéon Sorbonne, je
+                conçois et réalise tous vos projets créatifs.
+                Directrice artistique digital & print, je m'assure de donner vie à tous vos projets de façon claire
+                et attractive, en restant cohérente avec votre image de marque. Mon travail s'orientant à la fois
+                vers de l'art plastique comme de l'art graphique, je fais appel à la fois à de l'infographie, de la
+                dataviz, de l'illustration, du code ou de l'animation afin de mettre votre entreprise ou vos projets
+                le plus en avant possible dans un monde dominé par la culture de l'image. <br/>
+                J'ai déjà pu travailler pour des marques tels que Patrouille de France, Élysées, Pompiers de Paris,
+                Côte d'Azur France, Courchevel, Les Vosges, Têtu Magazine, Gifi, Loxam, MGEN,... tant dans la
+                conception et déclinaisons des supports digitaux pour leurs sites e-commerce, dans la création de
+                chartes, dans la conception et réalisation de visuels que pour de l'illustration et du développement
+                produit
+                Je suis aujourd'hui freelance, et mon expérience me permet de mettre mes compétences à votre profit
+                !
 
-        <div class="column2">
-            <div class="text_article">
-                <h2> Hi, I'm Marie<br/>And I am an artistic director /<br/> graphic designer and artiste<br/> from
-                    Paris</h2>
-                <p>
-                    Après 5 années d'études, diplomée d'une licence d'Arts Plastiques à Amiens, d'un master 1 Design et
-                    prochainement d'un master 2 Métiers du Multimédia Interactif à Paris 1// Panthéon Sorbonne, je
-                    conçois et réalise tous vos projets créatifs.
-                    Directrice artistique digital & print, je m'assure de donner vie à tous vos projets de façon claire
-                    et attractive, en restant cohérente avec votre image de marque. Mon travail s'orientant à la fois
-                    vers de l'art plastique comme de l'art graphique, je fais appel à la fois à de l'infographie, de la
-                    dataviz, de l'illustration, du code ou de l'animation afin de mettre votre entreprise ou vos projets
-                    le plus en avant possible dans un monde dominé par la culture de l'image. <br/>
-                    J'ai déjà pu travailler pour des marques tels que Patrouille de France, Élysées, Pompiers de Paris,
-                    Côte d'Azur France, Courchevel, Les Vosges, Têtu Magazine, Gifi, Loxam, MGEN,... tant dans la
-                    conception et déclinaisons des supports digitaux pour leurs sites e-commerce, dans la création de
-                    chartes, dans la conception et réalisation de visuels que pour de l'illustration et du développement
-                    produit
-                    Je suis aujourd'hui freelance, et mon expérience me permet de mettre mes compétences à votre profit
-                    !
-
-
-            </div>
+                <!--                Là le bouton ne sert à rien vu que tu ne diriges vers rien -->
+                <!--                <a class="button">-->
+                <!--                    En savoir plus-->
+                <!--                </a>-->
 
         </div>
-
     </div>
-    <a class="button">
-        En savoir plus
-    </a>
-
 </section>
-<hr align=center size=1 width="50%">
-
 
 <!---
 	SKILLS
@@ -117,56 +119,59 @@
 <section class="skills-section bg-light padding-sm" id="skills">
     <div class="container">
         <div class="row">
-            <h2 class="center">Skills</h2>
-            <div class="skills-bar-container">
-                <ul>
-                    <label>ILLUSTRATOR</label>
-                    <span class="percent" id="html-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-html"></span>
-                    </li>
+            <div class="skills col">
+                <div class="container">
+                    <h2 class="center">Skills</h2>
+                    <div class="skills-bar-container">
+                        <ul>
+                            <label>ILLUSTRATOR</label>
+                            <span class="percent" id="html-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-html"></span>
+                            </li>
 
-                    <label>PHOTOSHOP</label>
-                    <span class="percent" id="css-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-css"></span>
-                    </li>
+                            <label>PHOTOSHOP</label>
+                            <span class="percent" id="css-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-css"></span>
+                            </li>
 
-                    <label>INDESIGN</label>
-                    <span class="percent" id="javascript-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-javascript"></span>
-                    </li>
+                            <label>INDESIGN</label>
+                            <span class="percent" id="javascript-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-javascript"></span>
+                            </li>
 
-                    <label>AFTER EFFECT</label>
-                    <span class="percent" id="git-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-git"></span>
-                    </li>
+                            <label>AFTER EFFECT</label>
+                            <span class="percent" id="git-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-git"></span>
+                            </li>
 
-                    <label>HTML5//CSS3//PHP</label>
-                    <span class="percent" id="php-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-php"></span>
-                    </li>
+                            <label>HTML5//CSS3//PHP</label>
+                            <span class="percent" id="php-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-php"></span>
+                            </li>
 
-                    <label>Wordpress</label>
-                    <span class="percent" id="wordpress-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-wordpress"></span>
-                    </li>
+                            <label>Wordpress</label>
+                            <span class="percent" id="wordpress-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-wordpress"></span>
+                            </li>
 
-                    <label>WORD//POWERPOINT</label>
-                    <span class="percent" id="nodejs-percent"></span>
-                    <li>
-                        <span class="progressbar progressred" id="progress-nodejs"></span>
-                    </li>
-                </ul>
+                            <label>WORD//POWERPOINT</label>
+                            <span class="percent" id="nodejs-percent"></span>
+                            <li>
+                                <span class="progressbar progressred" id="progress-nodejs"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <!---
 	FORMULAIRES
@@ -245,7 +250,19 @@
 </footer>
 
 <script crossorigin="anonymous"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $().ready(_ => {
+        if ($(window).width() + 16 < 767) {
+            $('#menuItem-2').data('toggle', 'dropdown');
+        } else {
+            $('#menuItem-2').removeAttr('data-toggle');
+        }
+    });
+</script>
 </body>
 </html>
